@@ -1,4 +1,21 @@
-// Initialize Splide
+// Initialize Splide for reviews
+document.addEventListener("DOMContentLoaded", function () {
+  const splide = new Splide("#myReviews", {
+    type: "loop", // Infinite loop
+    perPage: 1, // Show 1 slide at a time
+    autoplay: true, // Enable autoplay
+    interval: 5000, // 3-second interval
+    drag: true, // Enable drag
+    arrows: false, // Disable arrows
+    pagination: true, // Enable navigation dots
+    pauseOnHover: false, // Autoplay continues when hovered
+    gap: "10px",
+  });
+
+  splide.mount();
+});
+
+// Initialize Splide for Services
 document.addEventListener("DOMContentLoaded", function () {
   const splide = new Splide("#myServices", {
     type: "loop", // Infinite loop

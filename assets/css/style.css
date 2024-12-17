@@ -193,8 +193,25 @@ header > .main-nav > .cta-wrapper > li:nth-last-of-type(-n + 2) a {
 
 .section-hero .sec-left .greviewList {
   margin-top: 47px;
+  padding-top: 22px;
 }
 
+.section-hero .sec-left #myReviews .splide__pagination {
+  left: 0;
+  right: unset;
+  bottom: -32px;
+  padding: 0px;
+}
+.section-hero .sec-left #myReviews .splide__pagination li button {
+  background: #c6c6c6;
+  width: 7.412px;
+  height: 7.412px;
+}
+.section-hero .sec-left #myReviews .splide__pagination li button.is-active {
+  background: #fdb813;
+  width: 7.412px;
+  height: 7.412px;
+}
 .section-hero .sec-left .greviewList li {
   position: relative;
 }
@@ -251,7 +268,7 @@ header > .main-nav > .cta-wrapper > li:nth-last-of-type(-n + 2) a {
 }
 @media (max-width: 991px) {
   .section-hero .sec-right {
-    margin-top: 21px;
+    margin-top: 44px;
   }
 }
 .section-hero .sec-right .right-banner {

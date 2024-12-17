@@ -30,7 +30,7 @@
 
     <section class="sections section-hero">
 
-        <div class="container ">
+        <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-5 col-md-12 sec-left">
                     <h1><span>Specialists</span> in DHA Property Valuations</h1>
@@ -41,32 +41,37 @@
                             <span>155 Google Reviews</span>
                         </a>
                     </div>
-                    <ul class="greviewList">
-                        <?php foreach ($greviewsimages as $index => $greviewsimage) {
-                            $imgsize = getimagesize($greviewsimage);
-                            $filename = basename($greviewsimage);
-                            $filename_without_ext = preg_replace('/\\.[^.\\s]{3,4}$/', '', $filename);
 
-                            // Fetch the corresponding review data
-                            $review = $greviews[$index] ?? null;
+                    <div class="splide" id="myReviews">
+                        <div class="splide__track greviewList">
+                            <ul class="splide__list">
+                                <?php foreach ($greviewsimages as $index => $greviewsimage) {
+                                    $imgsize = getimagesize($greviewsimage);
+                                    $filename = basename($greviewsimage);
+                                    $filename_without_ext = preg_replace('/\\.[^.\\s]{3,4}$/', '', $filename);
 
-                            if ($review): ?>
-                                <li class="">
-                                    <div class="img-float">
-                                        <img src="<?= $greviewsimage ?>"
-                                            alt="<?= htmlspecialchars($review['img'], ENT_QUOTES) ?>"
-                                            width="<?= $imgsize[0] ?>" height="<?= $imgsize[1] ?>"
-                                            aria-hidden="true" decoding="async" loading="lazy" />
-                                    </div>
-                                    <div class="name-star d-flex align-items-center justify-content-between">
-                                        <p class="review-name"><?= htmlspecialchars($review['name'], ENT_QUOTES) ?></p>
-                                        <?= renderImg("five-star.svg", "icons", "", "", "", "", "", "") ?>
-                                    </div>
-                                    <p class="review-desc"><?= htmlspecialchars($review['desc'], ENT_QUOTES) ?></p>
-                                </li>
-                        <?php endif;
-                        } ?>
-                    </ul>
+                                    // Fetch the corresponding review data
+                                    $review = $greviews[$index] ?? null;
+
+                                    if ($review): ?>
+                                        <li class="splide__slide">
+                                            <div class="img-float">
+                                                <img src="<?= $greviewsimage ?>"
+                                                    alt="<?= htmlspecialchars($review['img'], ENT_QUOTES) ?>"
+                                                    width="<?= $imgsize[0] ?>" height="<?= $imgsize[1] ?>"
+                                                    aria-hidden="true" decoding="async" loading="lazy" />
+                                            </div>
+                                            <div class="name-star d-flex align-items-center justify-content-between">
+                                                <p class="review-name"><?= htmlspecialchars($review['name'], ENT_QUOTES) ?></p>
+                                                <?= renderImg("five-star.svg", "icons", "", "", "", "", "", "") ?>
+                                            </div>
+                                            <p class="review-desc"><?= htmlspecialchars($review['desc'], ENT_QUOTES) ?></p>
+                                        </li>
+                                <?php endif;
+                                } ?>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-lg-7 col-md-12 sec-right d-flex align-items-center justify-content-md-center justify-content-lg-end">
                     <div class="right-banner position-relative d-flex justify-content-center align-items-center">
@@ -194,7 +199,7 @@
         <?= renderImg("pyramid-right.svg", "", "pyramid-float", "", "", "", "", "") ?>
 
         <div class="container ">
-            <div class="row g-5 align-items-center">
+            <div class="row g   -5 align-items-center">
                 <div class="col-lg-6 col-md-12 left-sec">
                     <h2><span>Why Partner</span> with Romeo Property Valuers?</h2>
                     <p>Navigating the obligations and benefits of owning a DHA property can be complex. At Romeo Property Valuers, we provide expert advice and valuation services tailored to DHA landlords. Our in-depth knowledge of DHA processes ensures you understand your rights, meet your obligations, and maximise your investment's potential.</p>

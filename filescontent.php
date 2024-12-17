@@ -48,3 +48,18 @@ $services = [
         "desc" => "We pride ourselves on providing prompt services with clear and transparent communication at every step."
     ],
 ];
+
+$dhaproperties = [
+    [
+        "title" => "Landlord Obligations",
+        "desc" => "Maintenance of Property Standards Lease Compliance Insurance Requirements Financial Commitments"
+    ],
+    [
+        "title" => "Landlord Rights",
+        "desc" => "Guaranteed Rent Professional Property Management End-of-Lease Benefits"
+    ],
+    [
+        "title" => "Landlord Requirements",
+        "desc" => "Property Standards for Leasing Ongoing Compliance Communication with DHA"
+    ],
+];

@@ -14,8 +14,6 @@
 	<meta name="msapplication-TileColor" content="#ffffff">
 	<meta name="theme-color" content="#ffffff">
 
-	<!-- <link rel="preload" href="./assets/css/fonts/ArticulatCF-Medium.woff2 " as="font" type="font/woff2" crossorigin>
-	<link rel="preload" href="./assets/css/fonts/anton-v25-latin-regular.woff2 " as="font" type="font/woff2" crossorigin> -->
 
 
 	<link crossorigin rel="preload" href="./assets/css/reset.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -29,6 +27,16 @@
 	<style>
 		<?php include './assets/css/bootstrap.min.css'; ?>
 	</style>
+
+
+	<link crossorigin rel="preload" href="./assets/splide/css/splide-core.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<noscript>
+		<link rel="stylesheet" href="./assets/splide/css/splide-core.min.css">
+	</noscript>
+	<link crossorigin rel="preload" href="./assets/splide/css/splide.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<noscript>
+		<link rel="stylesheet" href="./assets/splide/css/splide.min.css">
+	</noscript>
 
 
 	<link crossorigin rel="preload" href="./assets/css/style.css?v=<?= $jscssverion ?>" as="style" onload="this.onload=null;this.rel='stylesheet'">

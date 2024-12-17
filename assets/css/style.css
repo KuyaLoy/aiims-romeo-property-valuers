@@ -262,4 +262,305 @@ header > .main-nav > .cta-wrapper > li:nth-last-of-type(-n + 2) a {
   width: 100%;
   border-radius: 16px;
   background-color: #b2ddfc;
+  border-radius: 16px;
+}
+.section-hero .sec-right .right-banner .main-image {
+  height: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+}
+.section-hero .sec-right .right-banner .main-image img {
+  object-fit: cover;
+}
+.inner-div {
+  position: absolute;
+  height: clamp(29.0913125rem, 7.2739rem + 58.1797vw, 40rem);
+  max-width: 672px;
+  background-color: red;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 16px;
+}
+.section-hero .sec-right .right-banner .line-white {
+  position: absolute;
+  bottom: 0;
+  z-index: 0;
+}
+.section-hero .sec-right .right-banner .line-blue {
+  position: absolute;
+  bottom: 17px;
+  left: 0;
+  z-index: 2;
+}
+.section-hero .sec-right .right-banner .banner-right-text {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: clamp(17.9626875rem, 9.1249rem + 23.5673vw, 22.3815625rem);
+  height: clamp(10.4570625rem, 5.3712rem + 13.5623vw, 13rem);
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.section-hero .sec-right .right-banner .banner-right-text p {
+  z-index: 4;
+  width: clamp(9.4985rem, 4.8253rem + 12.462vw, 11.835125rem);
+  margin-right: clamp(0.875rem, 0.5rem + 1vw, 1.0625rem);
+  margin-bottom: clamp(1.0625rem, 0.4375rem + 1.6667vw, 1.375rem);
+
+  color: var(--primary-color);
+
+  font-family: var(--font-ArticulatCF);
+  font-size: clamp(0.875rem, 0.375rem + 1.3333vw, 1.125rem);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 95.023%;
+}
+.section-hero .sec-right .right-banner .banner-right-text p span {
+  font-weight: 400;
+  line-height: 95.023%;
+}
+.section-hero .sec-right .right-banner .banner-right-text .triangle-banner {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  width: 100%;
+}
+.section-hero .sec-right .right-banner .banner-right-text .banner-identifier {
+  position: absolute;
+  right: clamp(6.1875rem, 3.0625rem + 8.3333vw, 7.75rem);
+  bottom: clamp(3.625rem, 1.875rem + 4.6667vw, 4.5rem);
+  z-index: 4;
+  width: clamp(3.9626875rem, 2.0131rem + 5.199vw, 4.9375rem);
+}
+@media (max-width: 991px) {
+  .section-hero .sec-right .right-banner .line-blue {
+    left: unset;
+  }
+  .section-hero .sec-right .right-banner .line-white {
+    z-index: 1;
+    bottom: -24px;
+  }
+  .section-hero .sec-right .right-banner .banner-right-text {
+    z-index: 0;
+  }
+}
+
+/* Sections Contact */
+.section-contact {
+  padding: clamp(3.25rem, -0.625rem + 10.3333vw, 5.1875rem) 12px
+    clamp(2.1875rem, -6.0625rem + 22vw, 6.3125rem) 12px;
+}
+.section-contact .section-contact-cont {
+  border-radius: 18px;
+  background-color: var(--primary-color);
+  padding: 0;
+}
+
+.section-contact .section-contact-cont .left-cont {
+  height: 100%;
+  background-color: var(--secondary-color);
+  border-radius: 18px;
+  min-height: clamp(30.75rem, 14.75rem + 42.6667vw, 38.75rem);
+  padding: 35px clamp(1.5rem, -2.125rem + 9.6667vw, 3.3125rem);
+}
+
+.section-contact .section-contact-cont .left-cont > h2 {
+  color: var(--primary-color);
+  font-family: "Normalidad Bold Var";
+  font-weight: bold;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 95.023%; /* 57.014px */
+  letter-spacing: -1.2px;
+}
+.section-contact .section-contact-cont .left-cont > p {
+  color: var(--primary-color);
+  font-family: var(--font-ArticulatCF);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%; /* 20.8px */
+  text-transform: capitalize;
+  max-width: 373.854px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 18px;
+}
+@media (max-width: 991px) {
+  .section-contact .section-contact-cont .left-cont > p {
+    main-top: 24px;
+  }
+}
+
+.section-contact .section-contact-cont .left-cont .card-details {
+  background-color: var(--primary-color);
+  margin-top: clamp(1.5rem, -1.125rem + 7vw, 2.8125rem);
+  padding: clamp(2.0625rem, 0.9375rem + 3vw, 2.625rem) 26px
+    clamp(2.1875rem, 0.6875rem + 4vw, 2.9375rem) 26px;
+  border-radius: 10px;
+}
+.section-contact .section-contact-cont .left-cont .card-details > h3 {
+  color: var(--secondary-color);
+  text-align: center;
+  font-family: "Normalidad Bold Var";
+  font-weight: bold;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 95.023%; /* 28.507px */
+  letter-spacing: -0.6px;
+}
+.section-contact .section-contact-cont .left-cont .card-details > h3 > span {
+  color: var(--text-colored-color);
+}
+
+.section-contact .section-contact-cont .left-cont .card-details > p {
+  color: var(--text-colored-color);
+  text-align: center;
+  font-family: var(--font-ArticulatCF);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 20.8px */
+  max-width: 382.699px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+.section-contact .section-contact-cont .right-cont {
+  padding: 40px 26px 52px 26px;
+}
+.section-contact .section-contact-cont .right-cont h2 {
+  text-align: center;
+  color: var(--text-colored-color);
+  font-family: "Normalidad Bold Var";
+  font-weight: bold;
+  text-align: center;
+  font-size: clamp(2.5rem, 0.875rem + 4.3333vw, 3.3125rem);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 47px; /* 89.772% */
+  letter-spacing: -2.618px;
+  text-transform: capitalize;
+}
+@media (max-width: 991px) {
+  .section-contact .section-contact-cont .right-cont h2 {
+    color: var(--secondary-color);
+  }
+  .section-contact .section-contact-cont .right-cont h2 {
+    visibility: hidden; /* Prevents flicker */
+  }
+  .section-contact .section-contact-cont .right-cont h2::before {
+    content: "Contact Our Team";
+    visibility: visible;
+    display: block;
+  }
+  .section-contact .section-contact-cont .right-cont h2 span {
+    display: none; /* Hides additional text */
+  }
+}
+.section-contact .section-contact-cont .right-cont h2 span {
+  color: var(--secondary-color);
+}
+
+.section-contact .section-contact-cont .right-cont form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 674.732px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: clamp(1.8125rem, 0.1875rem + 4.3333vw, 2.625rem);
+}
+.section-contact
+  .section-contact-cont
+  .right-cont
+  form
+  .formCtrl:nth-child(n + 5) {
+  width: 100%;
+}
+.section-contact
+  .section-contact-cont
+  .right-cont
+  form
+  .formCtrl:nth-child(-n + 4) {
+  flex: 1 0 48%;
+}
+@media (max-width: 991px) {
+  .section-contact
+    .section-contact-cont
+    .right-cont
+    form
+    .formCtrl:nth-child(-n + 4) {
+    flex: 100%;
+  }
+}
+
+.section-contact .section-contact-cont .right-cont form input,
+.section-contact .section-contact-cont .right-cont form select,
+.section-contact .section-contact-cont .right-cont form textarea {
+  width: 100%;
+  border-radius: 13.961px;
+  border: 1.047px solid #fff;
+  background: var(--text-colored-color);
+  padding: 0 20px;
+  font-family: var(--font-ArticulatCF);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 20.8px */
+  outline: none;
+}
+.section-contact .section-contact-cont .right-cont form input,
+.section-contact .section-contact-cont .right-cont form select {
+  min-height: 47.202px;
+}
+.section-contact .section-contact-cont .right-cont form textarea {
+  min-height: 92px;
+  padding: 17px 20px;
+}
+.section-contact .section-contact-cont .right-cont form input::placeholder,
+.section-contact .section-contact-cont .right-cont form select:invalid,
+.section-contact .section-contact-cont .right-cont form textarea::placeholder {
+  color: #959abe;
+  font-size: 10.471px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.section-contact .section-contact-cont .right-cont form input[type="submit"] {
+  background-color: var(--secondary-color);
+  border: none;
+  color: var(--primary-color);
+  font-size: 17.452px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.873px;
+  text-transform: capitalize;
+  font-family: "Normalidad Bold Var";
+}
+
+.splide__slide {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  height: 200px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Optional: Hide arrows globally */
+.splide__arrow,
+.splide__pagination {
+  display: none !important;
 }

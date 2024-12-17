@@ -5,6 +5,10 @@ $greviewsdir = $srcnp . "greview/";
 $greviewsimages = count(glob($greviewsdir . "*.webp")) !== 0 ? glob($greviewsdir . "*.webp") : glob($greviewsdir . "*.png");
 natsort($greviewsimages);
 
+$servicesdir = $srcnp . "services/";
+$servicesimages = count(glob($servicesdir . "*.webp")) !== 0 ? glob($servicesdir . "*.webp") : glob($servicesdir . "*.png");
+natsort($servicesimages);
+
 
 $greviews = [
     [
@@ -22,4 +26,25 @@ $greviews = [
     //     "name" => "Hemanth Kolli",
     //     "desc" => "I had a great experience with Vincent and Romeo Property Valuers. Vincent was very prompt and professional in answering my questions on phone. His team was professional, responsive, and provided a thorough valuation of my property.",
     // ]
+];
+
+$services = [
+    [
+        "img" => "service_1",
+        "title" => "Expertise in DHA Properties",
+        "titleTags" => "<span>Expertise</span> in DHA Properties",
+        "desc" => "Our experience ensures that your valuation reflects these distinct characteristics accurately."
+    ],
+    [
+        "img" => "service_2",
+        "title" => "Comprehensive Valuation Services",
+        "titleTags" => "<span>Comprehensive</span> Valuation Services",
+        "desc" => "Our tailored valuation services include market value assessments, rental appraisals, and investment advice"
+    ],
+    [
+        "img" => "service_3",
+        "title" => "Timely and Transparent",
+        "titleTags" => "<span>Timely and</span> Transparent",
+        "desc" => "We pride ourselves on providing prompt services with clear and transparent communication at every step."
+    ],
 ];

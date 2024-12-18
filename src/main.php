@@ -222,8 +222,8 @@
                         <ul class="splide__list">
 
                             <?php foreach ($dhaproperties as $index => $property): ?>
-                                <li class="splide__slide">
-                                    <div class="card-cont">
+                                <li class="splide__slide property-<?= $index + 1; ?>">
+                                    <div class=" card-cont">
                                         <?= renderImg("property.svg", "icons", "pyramid-float", "", "", "", "", "") ?>
 
                                         <h3><?= htmlspecialchars($property['title'], ENT_QUOTES, 'UTF-8'); ?></h3>
@@ -234,7 +234,11 @@
                             <?php endforeach; ?>
 
                         </ul>
+
                     </div>
+                </div>
+                <div class="line-white-3">
+                    <?= renderImg("line-white-3.svg", "", "", "", "", "", "", "") ?>
                 </div>
             </div>
             <div class="sec-2">

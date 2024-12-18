@@ -802,6 +802,34 @@ header > .main-nav > .cta-wrapper > li:nth-last-of-type(-n + 2) a {
 }
 .orr-wrapper .sec-1 {
   margin-top: 60px;
+  position: relative;
+}
+
+.orr-wrapper .sec-1 .splide {
+  z-index: 2;
+}
+
+.property-1 .card-cont {
+  position: relative;
+}
+/* .property-1 .card-cont:before {
+  content: "";
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: red;
+  z-index: 10;
+  position: relative;
+} */
+.line-white-3 {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  bottom: -90px;
+  z-index: 1;
 }
 .orr-wrapper .sec-1 .myDHAproperties ul li {
   padding-top: clamp(1.88840625rem, 0.7406rem + 3.0608vw, 2.4623125rem);

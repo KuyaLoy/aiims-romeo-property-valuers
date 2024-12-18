@@ -534,6 +534,20 @@ header > .main-nav > .cta-wrapper > li:nth-last-of-type(-n + 2) a {
     flex: 100%;
   }
 }
+.section-contact .section-contact-cont .right-cont form select > option {
+  border: none;
+  font-size: 16px;
+  line-height: 2em;
+}
+.section-contact .section-contact-cont .right-cont form select,
+.section-contact .section-contact-cont .right-cont form select > option {
+  width: 100%;
+}
+.section-contact .section-contact-cont .right-cont form select {
+  -moz-appearance: none; /* Firefox */
+  -webkit-appearance: none; /* Safari and Chrome */
+  appearance: none;
+}
 
 .section-contact .section-contact-cont .right-cont form input,
 .section-contact .section-contact-cont .right-cont form select,
@@ -805,31 +819,52 @@ header > .main-nav > .cta-wrapper > li:nth-last-of-type(-n + 2) a {
   position: relative;
 }
 
-.orr-wrapper .sec-1 .splide {
-  z-index: 2;
-}
-
-.property-1 .card-cont {
-  position: relative;
-}
-/* .property-1 .card-cont:before {
-  content: "";
-  position: absolute !important;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: red;
-  z-index: 10;
-  position: relative;
-} */
-.line-white-3 {
+.orr-wrapper .sec-1 .line-white-3 {
   position: absolute;
-  bottom: 0;
   left: 50%;
-  transform: translate(-50%, 0);
-  bottom: -90px;
+  transform: translate(-52%, 0);
+  bottom: -92px;
   z-index: 1;
+}
+.orr-wrapper .sec-1 .line-blue-3 {
+  position: absolute;
+  left: 50%;
+  transform: translate(-52%, 0);
+  bottom: -70px;
+  z-index: 1;
+}
+.orr-wrapper .sec-1 .line-blue-2,
+.orr-wrapper .sec-1 .line-yellow-2 {
+  display: none;
+}
+@media (max-width: 991px) {
+  .orr-wrapper .sec-1 .line-white-3,
+  .orr-wrapper .sec-1 .line-blue-3 {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .orr-wrapper .container:nth-child(2) {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .orr-wrapper .sec-1 .myDHAproperties ul li {
+    padding-top: 37px;
+  }
+  .orr-wrapper .sec-1 .line-blue-2 {
+    right: 0px;
+    bottom: -130px;
+    position: absolute;
+    display: inline-block;
+    z-index: 2;
+  }
+  .orr-wrapper .sec-1 .line-yellow-2 {
+    right: 5px;
+    bottom: -110px;
+    position: absolute;
+    z-index: 2;
+    display: inline-block;
+  }
 }
 .orr-wrapper .sec-1 .myDHAproperties ul li {
   padding-top: clamp(1.88840625rem, 0.7406rem + 3.0608vw, 2.4623125rem);
@@ -1100,4 +1135,22 @@ footer .footer-cont ul.copyright li:last-child a {
 }
 .footer .footer-cont ul.partner li:last-child a {
   width: clamp(2.5rem, 0.8738rem + 4.3367vw, 3.313125rem);
+}
+.caretHere {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.caretHere:before {
+  position: absolute;
+  content: "";
+
+  right: 019px;
+
+  border-right: 7px solid transparent;
+  border-left: 7px solid transparent;
+  border-top: 7px solid var(--secondary-color);
+  position: absolute;
+  width: 0;
+  height: 0;
 }

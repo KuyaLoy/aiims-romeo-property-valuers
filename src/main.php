@@ -128,7 +128,7 @@
                             <div class="formCtrl">
                                 <input type="text" name="suburb" id="suburb" placeholder="Suburb" required>
                             </div>
-                            <div class="formCtrl">
+                            <div class="formCtrl caretHere">
                                 <select name="service" id="service" required>
                                     <option value="" selected>Which service are you looking for</option>
                                     <option value="choice 1">choice 1</option>
@@ -216,6 +216,8 @@
                 <h2>Landlord Obligations, Rights, and Requirements <span>For DHA Properties<span></h2>
                 <p>Owning a Defence Housing Australia (DHA) leased property comes with a range of obligations, rights, and requirements designed to ensure a seamless experience for landlords and tenants alike. As a landlord, understanding these aspects is essential for maintaining compliance and maximising the benefits of your investment.</p>
             </div>
+        </div>
+        <div class="container">
             <div class="sec-1">
                 <div class="splide myDHAproperties" id="myDHAproperties">
                     <div class="splide__track">
@@ -240,7 +242,16 @@
                 <div class="line-white-3">
                     <?= renderImg("line-white-3.svg", "", "", "", "", "", "", "") ?>
                 </div>
+                <div class="line-blue-3">
+                    <?= renderImg("line-blue-3.svg", "", "", "", "", "", "", "") ?>
+                </div>
+
+                <?= renderImg("line-blue-2.svg", "", "line-blue-2", "", "", "", "", "") ?>
+                <?= renderImg("line-yellow-2.svg", "", "line-yellow-2", "", "", "", "", "") ?>
             </div>
+        </div>
+        </div>
+        <div class="container">
             <div class="sec-2">
                 <div class="map-cont">
                     <?= renderImg("pyramid-right.svg", "", "pyramid-float", "", "", "", "", "") ?>
@@ -248,6 +259,8 @@
                     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31516.14549536585!2d151.13119950575657!3d-33.87093306078738!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b129126644b719d%3A0x27d1b793956e809a!2sRomeo%20Property%20Valuers!5e0!3m2!1sen!2sau!4v1734516785492!5m2!1sen!2sau" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
+        </div>
+        <div class="container">
             <div class="sec-3">
                 <div class="title d-flex align-items-center justify-content-between">
                     <h3>Emergency Plumbing FAQS</h3>

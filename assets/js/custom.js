@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
       },
       768: {
         perPage: 1, // Show partial slides on mobile
-        padding: "1.5rem",
+        padding: "3rem",
       },
     },
   });

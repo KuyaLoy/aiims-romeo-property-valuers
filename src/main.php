@@ -1,26 +1,26 @@
 <header>
     <div class="top-header d-flex justify-content-between align-items-center">
         <ul class="social-links d-flex justify-content-center">
-            <li><a href="#"><?= renderImg("facebook.svg", "icons/social-media", "", "", "", "", "", "") ?></a></li>
-            <li><a href="#"><?= renderImg("linkedin.svg", "icons/social-media", "", "", "", "", "", "") ?></a></li>
-            <li><a href="#"><?= renderImg("instagram.svg", "icons/social-media", "", "", "", "", "", "") ?></a></li>
+            <li><a href="https://www.facebook.com/RomeoPropertyValuers/" target="_blank"><?= renderImg("facebook.svg", "icons/social-media", "", "", "", "", "", "") ?></a></li>
+            <li><a href="https://www.linkedin.com/company/romeopropertyvaluers/" target="_blank"><?= renderImg("linkedin.svg", "icons/social-media", "", "", "", "", "", "") ?></a></li>
+            <li><a href="https://www.instagram.com/romeopropertyvaluers/" target="_blank"><?= renderImg("instagram.svg", "icons/social-media", "", "", "", "", "", "") ?></a></li>
         </ul>
         <ul class="minor-links d-flex justify-content-center">
-            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="https://romeopropertyvaluers.com.au/privacy-policy/" target="_blank">Privacy Policy</a></li>
             <li><a href="#">Terms & Conditions</a></li>
         </ul>
     </div>
     <nav class="main-nav d-flex align-items-center justify-content-between">
-        <a href="#" class="logo"><?= renderImg("logo.svg", "icons", "", "", "", "", "", "") ?></a>
+        <a href="/" class="logo"><?= renderImg("logo.svg", "icons", "", "", "", "", "", "") ?></a>
 
         <ul class="cta-wrapper d-flex align-items-center justify-content-center">
             <li class="d-flex align-items-center justify-content-center">
-                <a href="#">5.0 <?= renderImg("five-star.svg", "icons", "", "", "", "", "", "") ?>
+                <a href="https://g.co/kgs/qVd3H26" target="_blank">5.0 <?= renderImg("five-star.svg", "icons", "", "", "", "", "", "") ?>
                     <span>155 Google Reviews</span>
                 </a>
             </li>
-            <li><a href="#">Get Started</a></li>
-            <li><a href="#">02 9002 7347</a></li>
+            <li><a href="#get-started">Get Started</a></li>
+            <li><a href="tel:02 9002 7347">02 9002 7347</a></li>
         </ul>
     </nav>
 </header>
@@ -34,9 +34,9 @@
                 <div class="col-lg-5 col-md-12 sec-left">
                     <h1><span>Specialists</span> in DHA Property Valuations</h1>
                     <p>At Romeo Property Valuers, we are experts in providing precise and reliable property valuations, with a particular focus on Defence Housing Australia (DHA) properties.</p>
-                    <div class="cta-hero d-flex align-items-center justify-content-md-center ">
-                        <a href="#">Get Started</a>
-                        <a href="#" class="d-flex align-items-center">5.0 <?= renderImg("five-star.svg", "icons", "", "", "", "", "", "") ?>
+                    <div class="cta-hero d-flex align-items-center justify-content-center justify-content-md-start ">
+                        <a href="#get-started">Get Started</a>
+                        <a href="https://g.co/kgs/qVd3H26" target="_blank" class="d-flex align-items-center">5.0 <?= renderImg("five-star.svg", "icons", "", "", "", "", "", "") ?>
                             <span>155 Google Reviews</span>
                         </a>
                     </div>
@@ -96,7 +96,7 @@
 
     </section>
 
-    <section class="sections section-contact">
+    <section class="sections section-contact" id="get-started">
         <div class="container ">
             <div class="section-contact-cont">
                 <div class="row g-0 align-items-center justify-content-center">
@@ -113,8 +113,9 @@
                             <p class="d-none d-lg-inline">Contact us today <span>for professional guidance</span></p>
                             <p class="d-block d-lg-none">Contact Our Team</p>
                         </h2>
-                        <p class="d-block d-lg-none">Simply complete the form below & we’ll get back to you as soon as possible</p>
-                        <form action="">
+                        <p id="cforms" class="d-block d-lg-none">Simply complete the form below & we’ll get back to you as soon as possible</p>
+                        <form action="src/form.php" method="POST"
+                            enctype="multipart/form-data">
                             <div class="formCtrl">
                                 <input type="text" name="name" id="name" placeholder="Name" required>
                             </div>
@@ -130,6 +131,8 @@
                             <div class="formCtrl">
                                 <select name="service" id="service" required>
                                     <option value="" selected>Which service are you looking for</option>
+                                    <option value="choice 1">choice 1</option>
+                                    <option value="choice 1">choice 2</option>
                                 </select>
                             </div>
                             <div class="formCtrl">
@@ -154,14 +157,6 @@
             <div class="splide myServices" id="myServices">
                 <div class="splide__track">
                     <ul class="splide__list">
-                        <!-- <li class="splide__slide service-card">
-                            <div class="text-details">
-                                <h3><span>Expertise </span> in DHA Properties</h3>
-                                <p>Our experience ensures that your valuation reflects these distinct characteristics accurately.</p>
-                            </div>
-                            <?= renderImg("service_1.webp", "services", "", "", "", "", "", "") ?>
-
-                        </li> -->
 
                         <?php foreach ($servicesimages as $index => $servicesimage) {
                             $imgsize = getimagesize($servicesimage);
@@ -197,12 +192,12 @@
     <section class="sections sec-whyPartner position-relative d-flex align-items-center justify-content-center">
         <?= renderImg("pyramid-right.svg", "", "pyramid-float", "", "", "", "", "") ?>
 
-        <div class="container ">
+        <div class="container">
             <div class="row g-5 align-items-center">
                 <div class="col-lg-6 col-md-12 left-sec">
                     <h2><span>Why Partner</span> with Romeo Property Valuers?</h2>
                     <p>Navigating the obligations and benefits of owning a DHA property can be complex. At Romeo Property Valuers, we provide expert advice and valuation services tailored to DHA landlords. Our in-depth knowledge of DHA processes ensures you understand your rights, meet your obligations, and maximise your investment's potential.</p>
-                    <a href="#" class="d-none d-lg-inline-block">Get Started</a>
+                    <a href="#get-started" class="d-none d-lg-inline-block">Get Started</a>
                 </div>
                 <div class="col-lg-6 col-md-12 right-sec">
                     <div class="images-cont">
@@ -217,7 +212,31 @@
 
     <section class="orr-wrapper">
         <div class="container">
-            <div class="sec-1"></div>
+            <div class="title-wrapper">
+                <h2>Landlord Obligations, Rights, and Requirements <span>For DHA Properties<span></h2>
+                <p>Owning a Defence Housing Australia (DHA) leased property comes with a range of obligations, rights, and requirements designed to ensure a seamless experience for landlords and tenants alike. As a landlord, understanding these aspects is essential for maintaining compliance and maximising the benefits of your investment.</p>
+            </div>
+            <div class="sec-1">
+                <div class="splide myDHAproperties" id="myDHAproperties">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+
+                            <?php foreach ($dhaproperties as $index => $property): ?>
+                                <li class="splide__slide">
+                                    <div class="card-cont">
+                                        <?= renderImg("property.svg", "icons", "pyramid-float", "", "", "", "", "") ?>
+
+                                        <h3><?= htmlspecialchars($property['title'], ENT_QUOTES, 'UTF-8'); ?></h3>
+                                        <p><?= htmlspecialchars($property['desc'], ENT_QUOTES, 'UTF-8'); ?></p>
+                                    </div>
+
+                                </li>
+                            <?php endforeach; ?>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
             <div class="sec-2">
                 <div class="map-cont">
                     <?= renderImg("pyramid-right.svg", "", "pyramid-float", "", "", "", "", "") ?>
@@ -270,14 +289,14 @@
                 <li>Romeo Property DHA</li>
                 <li>All Rights Reserved</li>
                 <li class="w-md-100">
-                    <a href="#"><?= renderImg("facebook.svg", "icons/social-media/white", "", "", "", "", "", "") ?></a>
-                    <a href="#"><?= renderImg("linkedin.svg", "icons/social-media/white", "", "", "", "", "", "") ?></a>
-                    <a href="#"><?= renderImg("instagram.svg", "icons/social-media/white", "", "", "", "", "", "") ?></a>
+                    <a href="https://www.facebook.com/RomeoPropertyValuers/" target="_blank"><?= renderImg("facebook.svg", "icons/social-media/white", "", "", "", "", "", "") ?></a>
+                    <a href="https://www.linkedin.com/company/romeopropertyvaluers/" target="_blank"><?= renderImg("linkedin.svg", "icons/social-media/white", "", "", "", "", "", "") ?></a>
+                    <a href="https://www.instagram.com/romeopropertyvaluers/" target="_blank"><?= renderImg("instagram.svg", "icons/social-media/white", "", "", "", "", "", "") ?></a>
                 </li class="align-items-center justify-content-center">
             </ul>
             <ul class="partner d-flex align-items-center justify-content-center">
-                <li><a href="#"><?= renderImg("aiims-logo.svg", "", "Aiims", "", "", "", "", "") ?></a></li>
-                <li><a href="#"><?= renderImg("powered-by-logo.svg", "", "", "", "", "", "", "") ?></a></li>
+                <li><a href="https://www.aiims.com.au/like-our-work/" target="_blank"><?= renderImg("aiims-logo.svg", "", "Aiims", "", "", "", "", "") ?></a></li>
+                <li><a href="https://www.aiims.com.au/like-our-work/" target="_blank"><?= renderImg("powered-by-logo.svg", "", "", "", "", "", "", "") ?></a></li>
             </ul>
         </div>
     </footer>

@@ -1,3 +1,24 @@
+/* @font-face {
+  font-family: "Articulat CF";
+  src: url("fonts/ArticulatCF-Medium.eot");
+  src: url("fonts/ArticulatCF-Medium.eot?#iefix") format("embedded-opentype"),
+    url("fonts/ArticulatCF-Medium.woff2") format("woff2"),
+    url("fonts/ArticulatCF-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+} */
+
+@font-face {
+  font-family: "Articulat CF";
+  src: url("fonts/ArticulatCF-Heavy.eot");
+  src: url("fonts/ArticulatCF-Heavy.eot?#iefix") format("embedded-opentype"),
+    url("fonts/ArticulatCF-Heavy.woff2") format("woff2"),
+    url("fonts/ArticulatCF-Heavy.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
 @font-face {
   font-family: "Articulat CF";
   src: url("fonts/ArticulatCF-Medium.eot");
@@ -5,6 +26,87 @@
     url("fonts/ArticulatCF-Medium.woff2") format("woff2"),
     url("fonts/ArticulatCF-Medium.woff") format("woff");
   font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Articulat CF";
+  src: url("fonts/ArticulatCF-Regular.eot");
+  src: url("fonts/ArticulatCF-Regular.eot?#iefix") format("embedded-opentype"),
+    url("fonts/ArticulatCF-Regular.woff2") format("woff2"),
+    url("fonts/ArticulatCF-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Articulat CF Normal";
+  src: url("fonts/ArticulatCF-Normal.eot");
+  src: url("fonts/ArticulatCF-Normal.eot?#iefix") format("embedded-opentype"),
+    url("fonts/ArticulatCF-Normal.woff2") format("woff2"),
+    url("fonts/ArticulatCF-Normal.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Articulat CF";
+  src: url("fonts/ArticulatCF-Light.eot");
+  src: url("fonts/ArticulatCF-Light.eot?#iefix") format("embedded-opentype"),
+    url("fonts/ArticulatCF-Light.woff2") format("woff2"),
+    url("fonts/ArticulatCF-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Articulat CF Demi";
+  src: url("fonts/ArticulatCF-DemiBold.eot");
+  src: url("fonts/ArticulatCF-DemiBold.eot?#iefix") format("embedded-opentype"),
+    url("fonts/ArticulatCF-DemiBold.woff2") format("woff2"),
+    url("fonts/ArticulatCF-DemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Articulat CF";
+  src: url("fonts/ArticulatCF-Bold.eot");
+  src: url("fonts/ArticulatCF-Bold.eot?#iefix") format("embedded-opentype"),
+    url("fonts/ArticulatCF-Bold.woff2") format("woff2"),
+    url("fonts/ArticulatCF-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Articulat CF";
+  src: url("fonts/ArticulatCF-Thin.eot");
+  src: url("fonts/ArticulatCF-Thin.eot?#iefix") format("embedded-opentype"),
+    url("fonts/ArticulatCF-Thin.woff2") format("woff2"),
+    url("fonts/ArticulatCF-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Articulat CF Extra";
+  src: url("fonts/ArticulatCF-ExtraLight.eot");
+  src: url("fonts/ArticulatCF-ExtraLight.eot?#iefix")
+      format("embedded-opentype"),
+    url("fonts/ArticulatCF-ExtraLight.woff2") format("woff2"),
+    url("fonts/ArticulatCF-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Articulat CF Extra";
+  src: url("fonts/ArticulatCF-ExtraBold.eot");
+  src: url("fonts/ArticulatCF-ExtraBold.eot?#iefix") format("embedded-opentype"),
+    url("fonts/ArticulatCF-ExtraBold.woff2") format("woff2"),
+    url("fonts/ArticulatCF-ExtraBold.woff") format("woff");
+  font-weight: bold;
   font-style: normal;
   font-display: swap;
 }

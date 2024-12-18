@@ -63,3 +63,30 @@ $dhaproperties = [
         "desc" => "Property Standards for Leasing Ongoing Compliance Communication with DHA"
     ],
 ];
+
+$faqs = [
+    [
+        "title" => "What happens at the end of a DHA lease?",
+        "content" => "DHA conducts rental appraisals annually to ensure rental rates align with current market values. This helps maintain transparency and fairness for property owners and DHA tenants."
+    ],
+    [
+        "title" => "Why does DHA require rental appraisals by the end of the year?",
+        "content" => "DHA conducts rental appraisals annually to ensure rental rates align with current market values. This helps maintain transparency and fairness for property owners and DHA tenants."
+    ],
+    [
+        "title" => "Who conducts the rental appraisals for DHA properties?",
+        "content" => "DHA conducts rental appraisals annually to ensure rental rates align with current market values. This helps maintain transparency and fairness for property owners and DHA tenants."
+    ],
+    [
+        "title" => "What factors influence the rental appraisal value?",
+        "content" => "DHA conducts rental appraisals annually to ensure rental rates align with current market values. This helps maintain transparency and fairness for property owners and DHA tenants."
+    ],
+    [
+        "title" => "Will I be notified of the rental appraisal results?",
+        "content" => "DHA conducts rental appraisals annually to ensure rental rates align with current market values. This helps maintain transparency and fairness for property owners and DHA tenants."
+    ],
+    [
+        "title" => "What happens if I disagree with the rental appraisal outcome?",
+        "content" => "DHA conducts rental appraisals annually to ensure rental rates align with current market values. This helps maintain transparency and fairness for property owners and DHA tenants."
+    ],
+];

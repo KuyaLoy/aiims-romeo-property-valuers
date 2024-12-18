@@ -215,6 +215,54 @@
         </div>
     </section>
 
+    <section class="orr-wrapper">
+        <div class="container">
+            <div class="sec-1"></div>
+            <div class="sec-2">
+                <div class="map-cont">
+                    <?= renderImg("pyramid-right.svg", "", "pyramid-float", "", "", "", "", "") ?>
+
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31516.14549536585!2d151.13119950575657!3d-33.87093306078738!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b129126644b719d%3A0x27d1b793956e809a!2sRomeo%20Property%20Valuers!5e0!3m2!1sen!2sau!4v1734516785492!5m2!1sen!2sau" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="sec-3">
+                <div class="title d-flex align-items-center justify-content-between">
+                    <h3>Emergency Plumbing FAQS</h3>
+                    <span class="line d-none d-md-block"></span>
+                </div>
+                <div class="custom-accordion">
+                    <?php foreach ($faqs as $index => $faq): ?>
+                        <div class="custom-accordion-item">
+                            <div class="custom-accordion-title" onclick="toggleAccordion(this)">
+                                <div class="left">
+                                    <!-- Left Icon -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="21" viewBox="0 0 14 21" fill="none">
+                                        <path d="M6.35508 20.8252C7.40381 20.8252 8.25398 20.0267 8.25398 19.0417C8.25398 18.0568 7.40381 17.2583 6.35508 17.2583C5.30634 17.2583 4.45618 18.0568 4.45618 19.0417C4.45618 20.0267 5.30634 20.8252 6.35508 20.8252Z" fill="#257093" />
+                                        <path d="M4.93157 15.4747V14.1372C4.93157 11.5351 6.77255 10.1128 8.25464 8.97051C9.73674 7.82821 10.6283 7.06579 10.6283 5.66578C10.6283 4.04106 9.13763 2.99061 6.83047 2.99061C5.44741 2.99013 4.09343 3.36346 2.93013 4.06603L1.79079 4.84807L0.100769 2.71685L1.22872 1.92054C2.8831 0.871526 4.83435 0.312425 6.83047 0.315442C10.7441 0.315442 13.4766 2.51622 13.4766 5.66578C13.4766 8.4007 11.5834 9.86312 10.0586 11.0366C8.60119 12.162 7.77992 12.8602 7.77992 14.1372V15.4747H4.93157Z" fill="#257093" />
+                                    </svg>
+                                    <span><?= htmlspecialchars($faq['title'], ENT_QUOTES, 'UTF-8'); ?></span>
+                                </div>
+                                <div class="right">
+                                    <!-- Default Plus Icon -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="23" viewBox="0 0 22 23" fill="none">
+                                        <path d="M10.7683 11.5701V2.65283M10.7683 11.5701H19.6855M10.7683 11.5701V20.4873M10.7683 11.5701H1.85107" stroke="#257093" stroke-width="3.42971" stroke-linecap="round" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="custom-accordion-content <?= $index === 1 ? 'default-open' : ''; ?>">
+                                <div class="custom-accordion-content-text">
+                                    <p><?= nl2br(htmlspecialchars($faq['content'], ENT_QUOTES, 'UTF-8')); ?></p>
+                                </div>
+                            </div>
+                        </div>
+                    <?php endforeach; ?>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
     <footer class="footer">
         <div class="container footer-cont d-flex flex-column flex-lg-row align-items-center justify-content-between">
             <ul class="copyright d-flex  align-items-center justify-content-center justify-content-lg-start">

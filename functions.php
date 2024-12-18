@@ -1,7 +1,7 @@
 <?php
 // include __DIR__ . '/env.php';
 $jscssverion = 1;
-$site = "Lorem ipsum dolor sit amet, consectet";
+$site = "Property Valuation Sydney | Sydney Property Valuers | RPV";
 $phone_number = "0408 999 528";
 $href_phone_number = "tel:+61408999528";
 $emailcont = "localelectricalservices@outlook.com";

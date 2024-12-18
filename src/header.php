@@ -6,11 +6,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title><?= $site ?></title>
-	<link rel="apple-touch-icon" sizes="57x57" href="./assets/images/favicon/apple-icon-57x57.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="./assets/images/favicon/favicon-96x96.png">
-	<link rel="manifest" href="./assets/images/favicon/site.webmanifest">
-	<link rel="mask-icon" href="./assets/images/favicon/safari-pinned-tab.svg" color="#da532c">
+
+	<link rel="icon" href="./assets/images/favicon/favicon.png" sizes="32x32">
+	<link rel="icon" href="./assets/images/favicon/favicon.png" sizes="192x192">
+	<link rel="apple-touch-icon" href="./assets/images/favicon/favicon.png">
+	<meta name="msapplication-TileImage" content="./assets/images/favicon/favicon.png">
+
 	<meta name="msapplication-TileColor" content="#ffffff">
 	<meta name="theme-color" content="#ffffff">
 

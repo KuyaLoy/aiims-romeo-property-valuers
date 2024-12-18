@@ -25,7 +25,6 @@
     </nav>
 </header>
 
-
 <main class="main overflow-hidden">
 
     <section class="sections section-hero">
@@ -199,7 +198,7 @@
         <?= renderImg("pyramid-right.svg", "", "pyramid-float", "", "", "", "", "") ?>
 
         <div class="container ">
-            <div class="row g   -5 align-items-center">
+            <div class="row g-5 align-items-center">
                 <div class="col-lg-6 col-md-12 left-sec">
                     <h2><span>Why Partner</span> with Romeo Property Valuers?</h2>
                     <p>Navigating the obligations and benefits of owning a DHA property can be complex. At Romeo Property Valuers, we provide expert advice and valuation services tailored to DHA landlords. Our in-depth knowledge of DHA processes ensures you understand your rights, meet your obligations, and maximise your investment's potential.</p>
@@ -217,5 +216,20 @@
     </section>
 
     <footer class="footer">
-
+        <div class="container footer-cont d-flex flex-column flex-lg-row align-items-center justify-content-between">
+            <ul class="copyright d-flex  align-items-center justify-content-center justify-content-lg-start">
+                <li>Copyright 2024</li>
+                <li>Romeo Property DHA</li>
+                <li>All Rights Reserved</li>
+                <li class="w-md-100">
+                    <a href="#"><?= renderImg("facebook.svg", "icons/social-media/white", "", "", "", "", "", "") ?></a>
+                    <a href="#"><?= renderImg("linkedin.svg", "icons/social-media/white", "", "", "", "", "", "") ?></a>
+                    <a href="#"><?= renderImg("instagram.svg", "icons/social-media/white", "", "", "", "", "", "") ?></a>
+                </li class="align-items-center justify-content-center">
+            </ul>
+            <ul class="partner d-flex align-items-center justify-content-center">
+                <li><a href="#"><?= renderImg("aiims-logo.svg", "", "Aiims", "", "", "", "", "") ?></a></li>
+                <li><a href="#"><?= renderImg("powered-by-logo.svg", "", "", "", "", "", "", "") ?></a></li>
+            </ul>
+        </div>
     </footer>

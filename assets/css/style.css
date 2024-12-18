@@ -751,3 +751,105 @@ header > .main-nav > .cta-wrapper > li:nth-last-of-type(-n + 2) a {
     bottom: -52px;
   }
 }
+
+/* ##### Footer ###### */
+.footer {
+  background-color: #052534;
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+@media (max-width: 991px) {
+  footer .footer-cont {
+    gap: 15px;
+  }
+}
+footer .footer-cont ul li {
+  color: var(--text-colored-color);
+}
+
+footer .footer-cont ul.copyright li {
+  font-family: var(--font-ArticulatCF);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%; /* 20.8px */
+}
+@media (max-width: 991px) {
+  footer .footer-cont ul.copyright {
+    flex-wrap: wrap;
+    row-gap: 15px;
+  }
+  footer .footer-cont ul.copyright li:not(:last-child) {
+    padding: 0 clamp(0.625rem, -0.125rem + 2vw, 1rem) !important;
+    font-size: clamp(0.75rem, 0.25rem + 1.3333vw, 1rem);
+  }
+}
+
+footer .footer-cont ul.copyright li:first-child {
+  padding-right: 32px;
+}
+footer .footer-cont ul.copyright li:nth-child(2) {
+  border-right: 1px solid var(--text-colored-color);
+  border-left: 1px solid var(--text-colored-color);
+  padding: 0 32px;
+}
+footer .footer-cont ul.copyright li:nth-child(3) {
+  padding-left: 32px;
+  padding-right: 16px;
+}
+
+footer .footer-cont ul.copyright li:last-child {
+  padding-left: 16px;
+}
+@media (max-width: 991px) {
+  footer .footer-cont ul.copyright li:last-child {
+    padding-left: 0px;
+  }
+  footer .footer-cont ul.copyright li:last-child a {
+    width: 25px;
+    margin-right: 0px;
+  }
+  footer .footer-cont ul.copyright li:last-child a img {
+    width: 100%;
+  }
+}
+footer .footer-cont ul.copyright li:last-child a {
+  display: inline-block;
+  margin-right: 10px;
+  width: 19px;
+}
+@media (max-width: 991px) {
+  footer .footer-cont ul.copyright li:last-child {
+    width: 100%;
+    text-align: center;
+  }
+}
+.footer .footer-cont ul.partner li {
+  padding: 0 7px;
+}
+.footer .footer-cont ul.partner li a {
+  display: inline-block;
+}
+.footer .footer-cont ul.partner li a img {
+  width: 100%;
+}
+
+.footer .footer-cont ul.partner li:first-child a {
+  width: clamp(1.875rem, -0.435rem + 6.16vw, 3.03rem);
+}
+.footer .footer-cont ul.partner li:last-child {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.footer .footer-cont ul.partner li:last-child:before {
+  content: "";
+  height: clamp(1.25rem, -1rem + 6vw, 2.375rem);
+  width: 2px;
+  position: absolute;
+  left: 0;
+  background-color: var(--text-colored-color);
+}
+.footer .footer-cont ul.partner li:last-child a {
+  width: clamp(2.5rem, 0.8738rem + 4.3367vw, 3.313125rem);
+}

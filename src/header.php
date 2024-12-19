@@ -15,11 +15,19 @@
 	<meta name="msapplication-TileColor" content="#ffffff">
 	<meta name="theme-color" content="#ffffff">
 
-
+	<link rel="preload" href="./assets/css/fonts/ArticulatCF-Medium.woff2 " as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="./assets/css/fonts/NormalidadCompact-Bold.woff2 " as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="./assets/css/fonts/NormalidadCompact-Regular.woff2 " as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="./assets/css/fonts/ArticulatCF-Regular.woff2 " as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="./assets/css/fonts/ArticulatCF-Bold.woff2 " as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="./assets/css/fonts/ArticulatCF-Light.woff2 " as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="./assets/css/fonts/ArticulatCF-Medium.woff2 " as="font" type="font/woff2" crossorigin>
 
 	<link crossorigin rel="preload" href="./assets/css/reset.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<noscript>
+		<link rel="stylesheet" href="./assets/css/reset.css">
+	</noscript>
 	<link crossorigin rel="preload" href="./assets/css/fonts.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-
 	<noscript>
 		<link rel="stylesheet" href="./assets/css/fonts.css">
 	</noscript>

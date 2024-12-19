@@ -668,6 +668,7 @@ header > .main-nav > .cta-wrapper > li:nth-last-of-type(-n + 2) a {
 }
 
 .sec-whyPartner {
+  overflow: hidden;
   background-color: var(--section-bg);
   padding-top: clamp(3.125rem, -3.125rem + 16.6667vw, 6.25rem);
   padding-bottom: 100px;

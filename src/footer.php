@@ -19,7 +19,7 @@
 
 <!-- <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDsiM5PhtKu9SW2wTw-6kKlQ3rfjK3WhV4&callback=initMap"> </script> -->
 
-<script type="text/javascript" src="./assets/splide/js/splide.min.js"></script>
+<script type="text/javascript" src="./assets/splide/js/splide.min.js" defer></script>
 <script type="text/javascript" src="./assets/js/custom.js?v=<?= $jscssverion ?>" defer></script>
 
 </body>

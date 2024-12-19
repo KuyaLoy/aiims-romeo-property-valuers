@@ -2,8 +2,8 @@
 // include __DIR__ . '/env.php';
 $jscssverion = 1;
 $site = "Property Valuation Sydney | Sydney Property Valuers | RPV";
-$phone_number = "0408 999 528";
-$href_phone_number = "tel:+61408999528";
+$phone_number = "02 9002 7347";
+$href_phone_number = "tel:02 9002 7347";
 $emailcont = "localelectricalservices@outlook.com";
 $href_emailcont = "mailto:" . $emailcont;
 $admin_email = "aiimsstagingcom@aiims-staging.com.au";

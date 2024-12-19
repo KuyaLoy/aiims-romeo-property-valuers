@@ -25,9 +25,9 @@
     </nav>
 </header>
 
-<main class="main overflow-hidden">
+<main>
 
-    <section class="sections section-hero">
+    <section class="sections section-hero overflow-hidden">
 
         <div class="container">
             <div class="row align-items-center">
